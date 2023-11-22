@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Récupération de l\'applicatif') {
             steps {
-                git url: 'https://MoradDev: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@github.com/MoradDev/HelloJava.git'
+                git url: 'https://AuceaneH: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@github.com/AuceaneH/HelloWorld.git'
                 script {
                     // Copiez le fichier Hello.java dans /tmp
                     sh 'rm -f /tmp/*.java'
