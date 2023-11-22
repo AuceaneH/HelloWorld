@@ -6,9 +6,9 @@ pipeline {
             steps {
                 git url: 'https://AuceaneH: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@github.com/AuceaneH/HelloWorld.git'
                 script {
-                    // Copiez le fichier Hello.java dans /tmp
+                    // Copiez le fichier HelloWorld.java dans /tmp
                     sh 'rm -f /tmp/*.java'
-                    sh 'cp Hello.java /tmp'
+                    sh 'cp HelloWorld.java /tmp'
                 }
             }
         }
@@ -16,8 +16,8 @@ pipeline {
         stage('Build de l\'applicatif') {
             steps {
                 dir('/tmp') {
-                    sh 'javac Hello.java'
-                    sh 'java Hello'
+                    sh 'javac HelloWorld.java'
+                    sh 'java HelloWorld'
                 }
             }
         }
