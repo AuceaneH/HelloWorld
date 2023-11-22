@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Récupération de l\'applicatif') {
             steps {
-                git url: 'https://AuceaneH:token@github.com/AuceaneH/HelloWorld.git'
+                git url: 'https://AuceaneH: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@github.com/AuceaneH/HelloWorld.git'
                 script {
                     // Copiez le fichier HelloWorld.java dans /tmp
                     sh 'rm -f /tmp/*.java'
